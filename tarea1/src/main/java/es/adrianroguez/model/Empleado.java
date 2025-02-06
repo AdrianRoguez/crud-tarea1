@@ -90,7 +90,7 @@ public class Empleado {
      * @return edad
      */
     public int getEdad() {
-        LocalDate edad = LocalDate.parse(fechaNacimiento, DateTimeFormatter.ofPattern("d/MM/yyyy"));
+        LocalDate edad = LocalDate.parse(fechaNacimiento, DateTimeFormatter.ofPattern("dd/MM/yyyy"));
         return LocalDate.now().compareTo(edad);
     }
 
